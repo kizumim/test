@@ -1,0 +1,13 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+  become: True
+  become_method: sudo
+  become_user: root
+  roles:
+#    - role: geerlingguy.repo-epel
+    - geerlingguy.repo-epel
+#    - role: geerlingguy.pip
+    - geerlingguy.pip
+#    - role: localhost
+    - localhost

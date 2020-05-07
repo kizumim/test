@@ -1,0 +1,9 @@
+---
+- hosts: server1
+  serial: 1
+#  become: yes
+#  become_method: sudo
+#  become_user: root
+
+  roles:
+    - zabbix/agent

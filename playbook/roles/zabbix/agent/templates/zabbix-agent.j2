@@ -1,0 +1,11 @@
+/var/log/zabbix/zabbix_agentd.log	 
+{
+missingok
+daily
+rotate {{ rotate }}
+compress
+dateext
+postrotate
+/bin/kill -HUP `cat /var/run/zabbix_agentd.pid 2> /dev/null` 2> /dev/null || true
+endscript
+}

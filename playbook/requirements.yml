@@ -1,0 +1,4 @@
+# from galaxy
+- src: geerlingguy.repo-epel
+- src: geerlingguy.pip
+- src: dj-wasabi.zabbix-agent

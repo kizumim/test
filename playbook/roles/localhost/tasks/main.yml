@@ -1,0 +1,14 @@
+---
+- name: yum  install
+  yum:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+   - ruby
+
+- name: pip install
+  pip: 
+    name: "{{ item }}"
+    state: latest
+  with_items:
+   - zabbix-api
